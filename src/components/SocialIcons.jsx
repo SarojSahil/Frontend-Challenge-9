@@ -11,7 +11,7 @@ const icons = [
 
 const SocialIcons = () => {
   return (
-    <ul className="flex justify-between gap-2 sm:gap-6 mb-4">
+    <ul className="grid grid-cols-[repeat(auto-fit,48px)] justify-between gap-4 mb-4">
       {
         icons.map(icon => <SocialIcon Icon={icon} />)
       }
@@ -23,7 +23,7 @@ const SocialIcon = ({Icon}) => {
   return (
     <li>
       <a className="p-2 block rounded-full bg-gray hover:ring-2" href="">
-        <Icon className="w-6 sm:w-8 h-6 sm:h-8 stroke-4" />
+        <Icon className="w-8 h-8 stroke-4" />
       </a>
     </li>
   );

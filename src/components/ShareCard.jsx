@@ -25,7 +25,7 @@ const ShareCard = () => {
         <p className="overflow-x-auto horizantal-scrollbar">{url}</p>
         <button
           onClick={handleCopyUrl}
-          className="min-w-20 font-bold flex items-center justify-center cursor-pointer">
+          className=" font-bold flex items-center justify-center cursor-pointer">
           {isCopied ? <>Copied <IoMdCheckmark className="ml-1 stroke-12" /></> : "Copy"}
         </button>
       </div>
